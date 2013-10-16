@@ -1,21 +1,32 @@
 <html data-cast-api-enabled="true">
 <head >
     <meta charset="utf-8"/>
-    <title>videojs-chromeCast DEMO</title>
-    <link rel="stylesheet" href="../dist/videojs.chromeCast.css" type="text/css"/>
+    <title>videojs-faceDetection DEMO</title>
+    <link rel="stylesheet" href="../dist/videojs.faceDetection.css" type="text/css"/>
     <link href="../libs/video-js-4.2.1/video-js.css" rel="stylesheet" type="text/css">
     <script src="../libs/video-js-4.2.1/combined.video.js"></script>
-    <script src="../dist/videojs.chromeCast.js"></script>
+    <!--<script src="../dist/videojs.faceDetection.js"></script>-->
+    <script src="../src/videojs.pluginBase.js"></script>
+    <script src="../src/component/videojs.faceDetectionComponent.js"></script>
+    <script src="../src/videojs.faceDetection.js"></script>
+    <!-- LIULI SRC -->
+    <!--<script type="text/javascript" src="../libs/liuliu/ccv.js"></script>-->
+    <!--<script type="text/javascript" src="../libs/liuliu/face.js"></script>-->
+    <!-- EDUARDO LUNDGREN SRC -->
+    <!--<script type="text/javascript" src="../libs/tracking.js-master/src/tracking.js"></script>-->
+    <!--<script type="text/javascript" src="../libs/tracking.js-master/src/tracker/human/human.js"></script>-->
+    <!--<script type="text/javascript" src="../libs/tracking.js-master/src/tracker/human/data/eye.js"></script>-->
+    <!-- INSPIRIT SRC -->
+    <script type="text/javascript" src="../libs/jsfeat-master/build/jsfeat.js"></script>
 </head>
 
 <body>
 <video id="video" controls preload="none" class="video-js vjs-default-skin" width="640" height="360">
-    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+    <source src="asset/bref-example.mp4" type="video/mp4">
 </video>
 
 <script>
-    videojs('video', {'plugins': {'chromecast': {}}});
+    videojs('video', {'plugins': {'faceDetection': {}}});
 </script>
 
 </body>

@@ -1,0 +1,10 @@
+/*! videojs-faceDetection - v0.1.0 - 2013-10-10
+* https://github.com/benjipott/videojs-faceDetection
+* Copyright (c) 2013 Pott Benjamin; Licensed MIT */
+
+/**
+* FaceDetection Component
+**/
+.vjs-default-skin .vjs-faceDetection {
+    position: absolute;
+}

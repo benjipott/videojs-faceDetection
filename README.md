@@ -1,20 +1,19 @@
-# videojs-chromeCast
+# videojs-faceDetection
 
-Display a chromecast Button on Control Bar video.js players.
+Display a faceDetection with video.js players.
 
-![videojs-chromeCast](http://benjipott.fr/images/video.js-chromecast.jpg)
+![videojs-faceDetection](http://benjipott.fr/images/video.js-faceDetection.jpg)
 
-## ChromeCast Api Reference
-https://developers.google.com/cast/ (doc)
-https://developers.google.com/cast/whitelisting (whitelisting)
+## HTML5-Face-Detection Reference
+http://wesbos.com/html5-video-face-detection-canvas-javascript/
+https://github.com/wesbos/HTML5-Face-Detection
 
 This plugin was tested on video.js 4.1.0 4.2.0 and 4.2.1.
 
-## Getting Started
-Download [videojs](http://www.videojs.com/) and [videojs.ga](https://github.com/benjipott/videojs-chromeCast)
+https://github.com/liuliu/ccv/tree/stable/js
 
-Allow your cast by clicking four times in the bottom left corner of the icon cast
-![videojs-chromeCast](http://benjipott.fr/images/video.js-chromecast-allow.jpg)
+## Getting Started
+Download [videojs](http://www.videojs.com/) and [videojs.ga](https://github.com/benjipott/videojs-faceDetection)
 
 In your web page:
 ```html
@@ -27,10 +26,10 @@ In your web page:
 
     videojs('video', {
         'plugins': {
-               'chromecast': {
+               'faceDetection': {
                     enabled : true,
-                    appId : 'your-chromecast-app-id',
-                    namespace : 'your-chromecast-namespace',
+                    appId : 'your-faceDetection-app-id',
+                    namespace : 'your-faceDetection-namespace',
                     title : 'video title',
                     description : 'video desc'
                     }
@@ -43,7 +42,3 @@ In your web page:
 ## Options
 
     enabled : true,
-    appId : 'your-chromecast-app-id',
-    namespace : 'your-namesapace',
-    title:'',
-    description:''
